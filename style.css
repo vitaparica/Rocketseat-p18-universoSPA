@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --ff-nav: 'Roboto', sans-serif;
+    --fc-nav: hsla(0, 0%, 100%, 1);
+    --fs-nav: 2.1rem;
+
+    --ff-body: 'Roboto', sans-serif;
+    --fc-body: hsla(240, 9%, 89%, 1);
+    --fs-body-heading: 4.8rem;
+    --fs-body-texting: 1.8rem;
+}
+
+.hide {
+    display: none;
+}
+
+/*NAV*/
+body {
+    max-width: 128rem;
+    max-height: 72rem;
+    position: relative;    
+}
+
+.backgroundHome, 
+.backgroundUniverse, 
+.backgroundExploration {
+    position: absolute;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+body nav {
+    height: 12.2rem;
+    padding: 4rem 16.4rem;
+    gap: 5.3rem;
+    display: flex;
+    
+    font-family: var(--ff-nav);
+    font-size: var(--fs-nav);
+    text-align: center;
+    font-weight: 400;
+    
+}
+
+#vector {
+    width: 4.9rem;
+    height: 4.2rem;
+    position: absolute;
+    top: 3rem;
+    left: 7rem;
+}
+
+body nav a {
+    color: var(--fc-nav);
+    font-size: var(--fs-nav);
+    line-height: 2.1rem;
+    text-decoration: none;
+}
+
+.hover-on {
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.1rem;
+    color: var(--fc-nav);
+    text-decoration: none;
+}
+
+#app {
+    height: 40rem;
+}
+
+/*HOME*/
+#home {
+    width: 40rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    margin-top: clamp(17rem, 25vh, 60rem);
+    margin-left: clamp(10rem, 40vw, 110rem);
+}
+
+#home h1 {
+    color: var(--fc-body);
+    font-family: var(--ff-body);
+    font-size: var(--fs-body-heading);
+    font-weight: 700;
+    line-height: 6rem;
+
+    margin-bottom: 2.4rem;
+}
+
+#home button {
+    display: flex;
+    padding: 1.2rem 3.2rem;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: .5rem;
+    border: 2px solid #FFF;
+    background-color: transparent;
+
+    color: var(--fc-body);
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+#home button:hover {
+    background: #FFF;
+    color: #02799D;
+}
+
+/*UNIVERSO-EXPLORAÇÃO*/
+
+#universe, 
+#exploration {
+    width: 648px;
+    margin: 63px 0 0 102px;
+}
+
+#universe h1, 
+#exploration h1 {
+    color: var(--fc-body);
+    font-family: var(--ff-body);
+    font-size: var(--fs-body-heading);
+    font-weight: 700;
+    line-height: 6rem;
+
+    margin-bottom: 1.6rem;
+}
+
+#universe p, 
+#exploration p {
+    color: var(--fc-body);
+    font-family: var(--ff-body);
+    font-size: var(--fs-body-texting);
+    font-weight: 400;
+    line-height: 2.9rem;
+}
+
+/*404 ERRO*/
+
+#error404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    margin-top: 12rem;
+    margin-left: clamp(10rem, 20vw, 110rem);
+}
+
+#error404 h1 {
+    color: var(--fc-body);
+    font-family: var(--ff-body);
+    font-size: var(--fs-body-heading);
+    font-weight: 700;
+    line-height: 6rem;
+
+    margin-bottom: 1.6rem;
+}
+
+#error404 h2 {
+    color: var(--fc-body);
+    font-family: var(--ff-body);
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 6rem;
+}
+
+#error404 p {
+    color: var(--fc-body);
+    font-family: var(--ff-body);
+    font-size: var(--fs-body-texting);
+    font-weight: 400;
+    line-height: 2.9rem;
+}
